@@ -1,6 +1,6 @@
 # Diagrama da Etapa 1
 
-![Diagrama da Etapa 1](diagramaEtapa1.png)
+![Diagrama da Etapa 1](DiagramaEtapa1.png)
 
 
 # Fluxo de Dados

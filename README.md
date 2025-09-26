@@ -55,22 +55,13 @@ O que cada pasta/arquivo contém:
 
 
 # ⚙️ Compilação 
+Requisitos: Linux, CMake ≥ 3.10, Compilador g++ ≥ 9.0
 
-Requisitos:
-    - Linux (Ubuntu recomendado)
-    - CMake ≥ 3.10
-    - Compilador g++ ≥ 9.0
-
-# Crie pasta de build
-mkdir build && cd build
-
-# Gere os arquivos de build
-cmake ..
-
-# Compile
-make
+Cria a pasta build: mkdir build && cd build<br>
+Gera os arquivos do build: cmake ..<br>
+Compila: make 
 
 # ▶️ Execução
-./server           # inicia o servidor HTTP
+./server           # inicia o servidor HTTP<br>
 ./test_logger      # roda o teste do logger
 

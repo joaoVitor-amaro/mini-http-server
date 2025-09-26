@@ -1,14 +1,7 @@
 # Diagrama da Etapa 1
 
-[ Cliente HTTP ]  →  [ Socket Servidor ]
-                          ↓
-                 [ Thread (ClientHandler) ]
-                          ↓
-              [ Processa GET → lê arquivo ]
-                          ↓
-                    [ Retorna resposta ]
-                          ↓
-                  [ Logger (libtslog) ]
+![Diagrama da Etapa 1](diagramaEtapa1.png)
+
 
 # Fluxo de Dados
 

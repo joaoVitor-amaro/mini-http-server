@@ -74,3 +74,9 @@ curl http://localhost:8080/index.html
 # Terminal 4 - Ou usar o script de teste (a partir da pasta build/)
 chmod +x tests/run_clients.sh
 ../tests/run_clients.sh 8080
+```
+
+### 🌐 Testar no navegador
+
+É possível também abrir o navegador e acessar diretamente quando o servidor estiver rodando:<br>
+👉 http://localhost:8080/index.html

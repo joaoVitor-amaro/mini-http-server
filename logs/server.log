@@ -100,3 +100,13 @@
 [2025-10-03 14:59:58] Servidor iniciado na porta 8080
 [2025-10-03 15:00:03] Requisição recebida: GET /index.html
 [2025-10-03 15:00:03] 200: ./www/index.html
+[2025-10-03 19:37:20] Iniciando servidor HTTP...
+[2025-10-03 19:37:20] Servidor iniciado na porta 8080
+[2025-10-03 19:37:36] Requisição recebida: GET /index.html
+[2025-10-03 19:37:36] 200: ./www//index.html
+[2025-10-03 19:37:37] Requisição recebida: GET /favicon.ico
+[2025-10-03 19:37:37] 404: ./www//favicon.ico
+[2025-10-03 19:41:02] Requisição recebida: GET /index.htm
+[2025-10-03 19:41:02] 404: ./www//index.htm
+[2025-10-03 19:41:24] Requisição recebida: GET /index.html
+[2025-10-03 19:41:24] 200: ./www//index.html

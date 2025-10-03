@@ -14,6 +14,10 @@ Nesta etapa foi implementado um servidor HTTP/1.0 concorrente capaz de:
 
 Também foi criado um script de teste (tests/run_clients.sh) que simula múltiplos clientes conectando ao servidor em paralelo.
 
+# 🚀 Funcionalides
+- Servidor: Aceita conexões de múltiplos clientes e registra as respostas do servidor de uma requisição get
+- Cliente: Realiza uma requisião de um get simples
+- Testes: Scripts automatizados para validação 
 
 # 📂 Estrutura de Pasta
 

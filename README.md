@@ -3,23 +3,16 @@
 Projeto desenvolvido para a disciplina LPII — Programação Concorrente (C/C++)
 Tema escolhido: B — Mini Servidor Web HTTP
 
-# 📌 Etapa 1 — Logger + Arquitetura
-Nesta etapa foi implementada a biblioteca libtslog, um logger thread-safe que garante gravação concorrente de mensagens em arquivo e console.
-Também foi definida a arquitetura inicial do projeto, com diretórios para include/, src/, tests/, logs/ e diagrams/.
+# 📌 Etapa 2
+Nesta etapa foi implementado um servidor HTTP/1.0 concorrente capaz de:
 
+ - Aceitar múltiplas conexões (uma thread por cliente).
+ - Atender requisições GET, servindo arquivos do diretório www/.
+ - Gerar logs concorrentes usando a biblioteca libtslog (da Etapa 1).
+ - Suportar uma fila de conexões pendentes com limite configurável.
+ - Iniciar/parar via CLI.
 
-# Diagrama da Etapa 1
-
-![Diagrama da Etapa 1](/diagrams/DiagramaEtapa1.png)
-
-# Fluxo de Dados
-
-   - Cliente HTTP: envia uma requisição GET para o servidor (ex.: navegador ou curl).
-   - Socket Servidor: aceita a conexão de entrada.
-   - Thread (ClientHandler): para cada conexão, uma thread (ou do pool) é criada para processar a requisição.
-   - Processa GET: a thread lê o arquivo requisitado do diretório www/.
-   - Resposta HTTP: a resposta é enviada de volta ao cliente.
-   - Logger (libtslog): todas as operações são registradas de forma concorrente no log. 
+Também foi criado um script de teste (tests/run_clients.sh) que simula múltiplos clientes conectando ao servidor em paralelo.
 
 
 # 📂 Estrutura de Pasta
@@ -37,7 +30,8 @@ mini-http-server/
 │   ├── server.cpp          
 │   └── client_handler.cpp  
 ├── tests/           
-│   └── test_logger.cpp   
+│   ├── test_logger.cpp   
+|   └── run_clients.sh   
 ├── logs/             
 │   └── server.log
 ├── diagrams/         
@@ -46,42 +40,33 @@ mini-http-server/
 └── README.md   
 ```     
 
-### Arquivos de configuração
+# ⚙️ Como rodar
 
-- **CMakeLists.txt**: Define a configuração do projeto, incluindo a compilação da biblioteca `libtslog.a`, do executável `server` e do binário de testes `test_logger`.
+### Pré-requisitos
+   - Linux
+   - CMake ≥ 3.10
+   - g++ ≥ 9.0
 
-### Diretório `include/` — Headers públicos do projeto
+### Compilação 
 
-- **libtslog.hpp** — API de logging usada pelo servidor (níveis de log, macros, sinks).  
-- **server.hpp** — Interface do servidor HTTP (inicialização, loop principal, shutdown).  
-- **client_handler.hpp** — Declarações para lidar com conexões individuais (parsing da requisição, envio de resposta).  
-- **config.hpp** — Estruturas e constantes de configuração (porta, paths de log, limites de threads).  
+```bash
+mkdir build && cd build
+cmake ..
+make 
+```
 
-### Diretório `src/` — Implementações
 
-- **libtslog.cpp** — Loop da thread de logging e escrita em sinks (console/arquivo).  
-- **server.cpp** — Implementação do servidor: socket, bind/listen, loop aceitando conexões.  
-- **client_handler.cpp** — Função que atende cada cliente em thread separada, parseia requisição e monta resposta HTTP.  
-- **main.cpp** — Ponto de entrada: lê config, inicia logger e servidor, trata sinais de término.  
+### Execução
+```bash
+# Terminal 1 - Servidor(roda o servidor)
+./server 8080 ./www
 
-### Diretório `diagrams/`
+# Terminal 2 - Cliente 1 (requisição simples)
+curl http://localhost:8080/
 
-- **diagramaEtapa1.png** — Imagem do diagrama.  
+# Terminal 3 - Cliente 2
+curl http://localhost:8080/index.html
 
-### Diretório `logs/`
-
-- **server.log** — Arquivo de log gerado em runtime.
-#
-
-# ⚙️ Compilação 
-Requisitos: Linux, CMake ≥ 3.10, Compilador g++ ≥ 9.0
-
-Cria a pasta build: mkdir build && cd build<br>
-Gera os arquivos do build: cmake ..<br>
-Compila: make 
-
-#
-# ▶️ Execução
-Inicia o servidor HTTP: ./server  
-Roda o teste do logger: ./test_logger
-
+# Terminal 4 - Ou usar o script de teste (a partir da pasta build/)
+chmod +x tests/run_clients.sh
+../tests/run_clients.sh 8080

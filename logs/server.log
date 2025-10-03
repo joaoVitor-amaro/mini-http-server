@@ -48,4 +48,55 @@
 [2025-09-26 13:49:08] Thread 7 - mensagem 1
 [2025-09-26 13:49:08] Thread 7 - mensagem 2
 [2025-09-26 13:49:08] Thread 7 - mensagem 3
-[2025-09-26 13:49:08] Thread 7 - mensagem 4
+[2025-09-26 13:49:08] Thread 7 - mensagem 4[2025-10-02 20:08:37] Iniciando servidor HTTP...
+[2025-10-02 20:08:37] Servidor iniciado na porta 8080
+[2025-10-02 20:08:41] Requisição recebida: GET /
+[2025-10-02 20:08:41] Requisição recebida: GET /
+[2025-10-02 20:08:41] Requisição recebida: GET /
+[2025-10-02 20:08:41] 200: ./www/index.html
+[2025-10-02 20:08:41] 200: ./www/index.html
+[2025-10-02 20:08:41] 200: ./www/index.html
+[2025-10-02 20:08:41] Requisição recebida: GET /
+[2025-10-02 20:08:41] 200: ./www/index.html
+[2025-10-02 20:08:41] Requisição recebida: GET /
+[2025-10-02 20:08:41] 200: ./www/index.html
+[2025-10-02 20:09:34] Iniciando servidor HTTP...
+[2025-10-02 20:09:34] Servidor iniciado na porta 8080
+[2025-10-02 20:09:52] Requisição recebida: GET /
+[2025-10-02 20:09:52] Requisição recebida: GET /
+[2025-10-02 20:09:52] 200: ./www/index.html
+[2025-10-02 20:09:52] 200: ./www/index.html
+[2025-10-02 20:09:52] Requisição recebida: GET /
+[2025-10-02 20:09:52] 200: ./www/index.html
+[2025-10-02 20:09:52] Requisição recebida: GET /
+[2025-10-02 20:09:52] 200: ./www/index.html
+[2025-10-02 20:09:52] Requisição recebida: GET /
+[2025-10-02 20:09:52] 200: ./www/index.html
+[2025-10-02 20:10:57] Requisição recebida: GET /
+[2025-10-02 20:10:57] 200: ./www/index.html
+[2025-10-02 20:10:57] Requisição recebida: GET /favicon.ico
+[2025-10-02 20:10:57] 404: ./www/favicon.ico
+[2025-10-02 20:11:21] Requisição recebida: GET /
+[2025-10-02 20:11:21] 200: ./www/index.html
+[2025-10-02 20:14:20] Requisição recebida: GET /
+[2025-10-02 20:14:20] 200: ./www/index.html
+[2025-10-02 20:14:27] Requisição recebida: GET /
+[2025-10-02 20:14:27] 200: ./www/index.html
+[2025-10-03 14:09:42] Iniciando servidor HTTP...
+[2025-10-03 14:09:42] Servidor iniciado na porta 8080
+[2025-10-03 14:10:01] Requisição recebida: GET /index.html
+[2025-10-03 14:10:01] 200: ./www/index.html
+[2025-10-03 14:20:32] Requisição recebida: GET /index.html
+[2025-10-03 14:20:32] 200: ./www/index.html
+[2025-10-03 14:39:29] Iniciando servidor HTTP...
+[2025-10-03 14:39:29] Servidor iniciado na porta 8080
+[2025-10-03 14:57:27] Requisição recebida: GET /index.html
+[2025-10-03 14:57:27] 200: ./www/index.html
+[2025-10-03 14:58:42] Iniciando servidor HTTP...
+[2025-10-03 14:58:42] Servidor iniciado na porta 8080
+[2025-10-03 14:58:47] Requisição recebida: GET /index.html
+[2025-10-03 14:58:47] 200: ./www/index.html
+[2025-10-03 14:59:58] Iniciando servidor HTTP...
+[2025-10-03 14:59:58] Servidor iniciado na porta 8080
+[2025-10-03 15:00:03] Requisição recebida: GET /index.html
+[2025-10-03 15:00:03] 200: ./www/index.html

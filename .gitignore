@@ -1,4 +1,10 @@
+# Ignorar a pasta de build (gerada pelo CMake/Make)
 /build/
 
 
+# Ignorar a pasta de configurações do VSCode (arquivos locais do editor)
 .vscode/
+
+
+# Ignorar arquivos de log
+logs/*.log

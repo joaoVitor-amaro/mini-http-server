@@ -1,0 +1,14 @@
+[2025-10-04 21:22:58] Iniciando servidor HTTP...
+[2025-10-04 21:22:58] Servidor iniciado na porta 8080
+[2025-10-04 21:23:42] Requisição recebida: GET /index.html
+[2025-10-04 21:23:42] 200: ./www//index.html
+[2025-10-04 21:24:16] Requisição recebida: GET /
+[2025-10-04 21:24:16] Requisição recebida: GET /
+[2025-10-04 21:24:16] 200: ./www//index.html
+[2025-10-04 21:24:16] Requisição recebida: GET /
+[2025-10-04 21:24:16] 200: ./www//index.html
+[2025-10-04 21:24:16] 200: ./www//index.html
+[2025-10-04 21:24:16] Requisição recebida: GET /
+[2025-10-04 21:24:16] 200: ./www//index.html
+[2025-10-04 21:24:16] Requisição recebida: GET /
+[2025-10-04 21:24:16] 200: ./www//index.html

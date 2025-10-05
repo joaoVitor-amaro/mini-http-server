@@ -6,9 +6,9 @@ Tema escolhido: B — Mini Servidor Web HTTP
 # 📌 Etapa 3
 Nesta etapa foi implementado:
 
- - Funcionalidades obrigatórias do tema concluídas
- - Logging integrado
- - Relatório final
+ - Funcionalidades obrigatórias do tema concluídas.
+ - Logging integrado.
+ - Relatório final.
 
 # 📂 Estrutura de Pasta
 

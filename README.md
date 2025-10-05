@@ -80,3 +80,9 @@ chmod +x tests/run_clients.sh
 
 É possível também abrir o navegador e acessar diretamente quando o servidor estiver rodando:<br>
 👉 http://localhost:8080/index.html
+
+
+## 🔗 Links Úteis
+
+- [**Repositório do Projeto**](https://github.com/joaoVitor-amaro/mini-http-server)
+- [**Relatório Técnico**](relatorio.md)

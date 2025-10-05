@@ -3,21 +3,12 @@
 Projeto desenvolvido para a disciplina LPII — Programação Concorrente (C/C++)
 Tema escolhido: B — Mini Servidor Web HTTP
 
-# 📌 Etapa 2
-Nesta etapa foi implementado um servidor HTTP/1.0 concorrente capaz de:
+# 📌 Etapa 3
+Nesta etapa foi implementado:
 
- - Aceitar múltiplas conexões (uma thread por cliente).
- - Atender requisições GET, servindo arquivos do diretório www/.
- - Gerar logs concorrentes usando a biblioteca libtslog (da Etapa 1).
- - Suportar uma fila de conexões pendentes com limite configurável.
- - Iniciar/parar via CLI.
-
-Também foi criado um script de teste (tests/run_clients.sh) que simula múltiplos clientes conectando ao servidor em paralelo.
-
-# 🚀 Funcionalides
-- Servidor: Aceita conexões de múltiplos clientes e registra as respostas do servidor de uma requisição get
-- Cliente: Realiza uma requisião de um get simples
-- Testes: Scripts automatizados para validação 
+ - Funcionalidades obrigatórias do tema concluídas
+ - Logging integrado
+ - Relatório final
 
 # 📂 Estrutura de Pasta
 
